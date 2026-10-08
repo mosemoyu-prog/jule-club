@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#163d36" />
+    <title>句乐部 · 英语学习站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <a class="brand" href="#today" data-nav="today" aria-label="句乐部首页">
+          <span class="brand-mark">句</span>
+          <span><strong>句乐部</strong><small>ENGLISH CLUB</small></span>
+        </a>
+        <nav class="primary-nav" aria-label="主导航">
+          <button class="nav-item active" data-nav="today"><span>◉</span>今日学习</button>
+          <button class="nav-item" data-nav="courses"><span>▤</span>课程包</button>
+          <button class="nav-item" data-nav="plans"><span>⌘</span>备考计划</button>
+          <button class="nav-item" data-nav="resources"><span>◌</span>听力阅读</button>
+          <p class="nav-label">学习管理</p>
+          <button class="nav-item" data-nav="mastery"><span>✦</span>掌握列表</button>
+          <button class="nav-item" data-nav="review"><span>↻</span>复习本 <b id="review-badge">0</b></button>
+          <button class="nav-item" data-nav="vocab"><span>Ａ</span>生词本</button>
+          <button class="nav-item" data-nav="insights"><span>⌁</span>成长分析</button>
+        </nav>
+        <div class="sidebar-foot">
+          <div class="mini-avatar">晴</div>
+          <div><strong>晴天同学</strong><small>持续学习，更接近目标</small></div>
+        </div>
+      </aside>
+      <main class="main-content" id="app" tabindex="-1"></main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
